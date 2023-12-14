@@ -1,0 +1,412 @@
+@import "/null/null.scss";
+
+$back_image: url(/public/images/mask-group.png);
+$null: 0px;
+$full_px: 100px;
+$full: 100%;
+$position_center: center;
+$f_weight: 800;
+$line_height: normal;
+$color_white: #fff;
+$fl: flex;
+$ab: absolute;
+$rel: relative;
+$max-w: 1200px;
+$min-w: 1200px;
+$auto: auto;
+$boder_def: 1px solid;
+$def_px: 10px;
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 480px;
+
+%body_style {
+  background: $back_image;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: $null;
+  padding: $null;
+  justify-content: $position_center;
+  align-items: $position_center;
+  color: $color_white;
+  overflow-x: hidden;
+}
+
+%margins_style {
+  margin: $null $auto;
+  padding: $null 5px;
+}
+
+%positions_style {
+  justify-content: $position_center;
+  align-items: $position_center;
+}
+
+body {
+  @extend %body_style;
+
+  .container {
+    max-width: $max-w;
+    height: 100vh * 2.5;
+    @extend %margins_style;
+    @extend %positions_style;
+  }
+
+  .body_texts_div {
+    width: $full;
+    height: $full_px * 5;
+    text-align: $position_center;
+    @extend %margins_style;
+    @extend %positions_style;
+    position: $rel;
+    top: ($full_px + $def_px * 5);
+    display: $fl;
+    flex-direction: column;
+  }
+
+  .main_text_div {
+    @extend %positions_style;
+    width: $full;
+    height: $full;
+    @extend %margins_style;
+  }
+
+  .main_text {
+    width: $full;
+    font-size: ($full_px + $def_px * 3) + ($def_px - 5px);
+  }
+
+  .second_text_div {
+    font-size: $full_px - 60px;
+    font-style: $line_height;
+    line-height: $full_px - 30px;
+    font-weight: ($full_px * 2);
+    display: $fl;
+    position: $rel;
+    top: -($def_px * 2);
+    width: ($full_px * 8 + 2);
+    height: ($full_px * 2 + 25);
+    flex-direction: column;
+    justify-content: $position_center;
+    align-items: $position_center;
+  }
+
+  .animation_div {
+    width: $full;
+    height: $full;
+    transform: translateY($def_px * 2);
+    opacity: 0;
+    text-align: $position_center;
+    animation: floatAnimation 1.5s ease-in-out infinite;
+  }
+
+  @keyframes floatAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY($def_px * 2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+
+  .fa-chevron-down {
+    font-size: $def_px * 3;
+  }
+  .register_div {
+    max-width: ($full_px * 10 + 100);
+    height: $full_px * 10.5;
+    @extend %margins_style;
+    @extend %positions_style;
+    background: linear-gradient(
+      311deg,
+      rgba(30, 30, 30, 0.6) -3.69%,
+      rgba(255, 255, 255, 0.2) 130.02%
+    );
+    background-blend-mode: screen;
+    border-radius: ($def_px * 5);
+    position: $rel;
+    top: $def_px * 20;
+
+    .register_container {
+      max-width: ($max-w) - ($full_px + 50);
+      @extend %margins_style;
+      justify-content: center;
+      align-items: $position_center;
+      display: $fl;
+      flex-direction: column;
+    }
+
+    .upload_div {
+      width: ($full_px * 2.5);
+      height: ($full_px * 2);
+      background-image: url(/public/images/Снимок\ экрана\ 2023-12-14\ 142433.png);
+      background-size: cover;
+      border-radius: $def_px - 5;
+    }
+
+    .upload_input {
+      color: linear-gradient(
+        91deg,
+        #1e1e1e -35.6%,
+        rgba(255, 255, 255, 0.15) 102.38%
+      );
+      padding: $def_px;
+      cursor: pointer;
+      font-size: 12px;
+      width: $full - 9%;
+      height: $full;
+    }
+
+    .register_items {
+      width: $full / 2;
+      position: $rel;
+      top: -$def_px * 2.5;
+    }
+
+    .register_item {
+      display: $fl;
+      flex-direction: column;
+      @extend %margins_style;
+      padding: $null $def_px;
+      line-height: ($def_px * 4.5);
+      position: $rel;
+    }
+
+    .placeholder_label {
+      font-size: 12px;
+      color: $color_white;
+    }
+
+    .register_flex_div {
+      width: $full;
+      display: $fl;
+      position: $rel;
+      top: $def_px * 5;
+      align-items: $position_center;
+      justify-content: space-between;
+      @extend %margins_style;
+      padding: $null $def_px;
+    }
+
+    #user_firstname,
+    #user_lastname {
+      width: $full;
+      height: $full_px - 50px;
+      margin: ($def_px - 5) auto;
+      padding: $null $def_px;
+      border-radius: $def_px;
+      border: crimson;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0);
+      background: linear-gradient(
+        91deg,
+        #1e1e1e -35.6%,
+        rgba(255, 255, 255, 0.15) 102.38%
+      );
+      color: $color_white;
+      align-items: $position_center;
+      font-family: Lexend Mega;
+      font-weight: 200;
+      line-height: $line_height;
+    }
+
+    .required_text {
+      display: none;
+    }
+
+    .inputs_group,
+    .group_inputs {
+      width: $full;
+      @extend %positions_style;
+      @extend %margins_style;
+      display: $fl;
+      flex-direction: column;
+      position: $rel;
+      top: $def_px * 5;
+    }
+
+    .group_inputs {
+      margin: $def_px * 2;
+      padding: $null $def_px;
+    }
+
+    .group_inputs label {
+      position: absolute;
+      top: -($def_px * 2.5);
+      left: $def_px;
+    }
+
+    .group_inputs input {
+      width: $full - 2%;
+      height: $full_px - 50px;
+      margin: ($def_px - 5) auto;
+      padding: $null $def_px;
+      border-radius: $def_px;
+      border: crimson;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0);
+      background: linear-gradient(
+        91deg,
+        #1e1e1e -35.6%,
+        rgba(255, 255, 255, 0.15) 102.38%
+      );
+      color: $color_white;
+      align-items: $position_center;
+      font-family: Lexend Mega;
+      font-weight: 200;
+      line-height: $line_height;
+    }
+
+    .service_terms_div {
+      width: $full;
+      display: $fl;
+      position: absolute;
+      bottom: $full_px + $def_px * 5;
+      justify-content: $position_center;
+      align-items: $position_center;
+      text-align: $position_center;
+    }
+
+    .register_btn {
+      position: absolute;
+      bottom: $def_px * 6;
+      padding: ($def_px + 2) ($def_px * 4);
+      color: #fff;
+      text-align: center;
+      font-family: Lexend Mega;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      border-radius: $def_px - 5;
+      cursor: pointer;
+      background: linear-gradient(
+        93deg,
+        #1e1e1e -110.41%,
+        rgba(217, 217, 217, 0.4) 198.89%
+      );
+      border: crimson;
+    }
+
+    .service_terms_div p {
+      margin: $null $def_px;
+    }
+  }
+
+  .footer {
+    width: $full;
+    height: ($full_px * 3 + 50px);
+    @extend %margins_style;
+    @extend %positions_style;
+    background: linear-gradient(
+      93deg,
+      #000 -73.48%,
+      rgba(255, 255, 255, 0.15) 83.74%
+    );
+    background-blend-mode: screen;
+  }
+
+  .footer_container {
+    max-width: $max-w;
+    height: $full;
+    height: $full_px * 3;
+    margin: $null auto;
+    padding: $null $def_px;
+    justify-content: $position_center;
+    align-items: $position_center;
+  }
+
+  .footer_first_component p {
+    font-size: 12px;
+    margin: $null;
+  }
+
+  .footer_first_component,
+  .footer_second_component {
+    @extend %positions_style;
+  }
+
+  .fa-telegram,
+  .fa-instagram,
+  .fa-github {
+    font-size: ($def_px * 5);
+    margin: $def_px;
+  }
+
+  .icons_row {
+    position: absolute;
+    top: -($full_px);
+  }
+
+  .footer_components_row {
+    display: $fl;
+    align-items: $position_center;
+    justify-content: space-between;
+  }
+
+  .footer_icons_div {
+    display: $fl;
+    position: $rel;
+    top: $full_px + $def_px * 5;
+  }
+
+  .footer_icons_div p {
+    font-size: 10px;
+    position: absolute;
+    bottom: -($def_px * 5);
+  }
+
+  .footer_form {
+    display: $fl;
+    flex-direction: column;
+    @extend %margins_style;
+    @extend %positions_style;
+    position: $rel;
+    top: $def_px * 10;
+  }
+
+  textarea {
+    border-radius: 10px;
+    background: linear-gradient(
+      91deg,
+      rgba(0, 0, 0, 0.19) -10.97%,
+      rgba(217, 217, 217, 0.19) 109.83%
+    );
+    color: $color_white;
+    font-family: Lexend Mega;
+    font-size: $def_px;
+    padding: $def_px;
+    outline: none;
+  }
+
+  .footer_btn {
+    padding: ($def_px + 2) ($def_px * 4);
+    color: #fff;
+    text-align: center;
+    font-family: Lexend Mega;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: $def_px - 5;
+    cursor: pointer;
+    background: linear-gradient(
+      93deg,
+      #1e1e1e -110.41%,
+      rgba(217, 217, 217, 0.2) 198.89%
+    );
+    border: crimson;
+    margin: $def_px;
+    position: $rel;
+    left: $full_px * 1.3;
+  }
+}
+
+
+
+

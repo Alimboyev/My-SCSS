@@ -1,0 +1,435 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700&family=Poppins:wght@200&family=Roboto:ital,wght@1,900&display=swap");
+body, h1, h2, h3, h4, h5, h6, blockquote, pre, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lexend Mega", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background: url(/public/images/mask-group.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+body .footer_form, body .footer, body .register_div .inputs_group,
+body .register_div .group_inputs, body .register_div .register_flex_div, body .register_div .register_item, body .register_div .register_container, body .register_div, body .main_text_div, body .body_texts_div, body .container {
+  margin: 0px auto;
+  padding: 0px 5px;
+}
+
+body .footer_form, body .footer_first_component,
+body .footer_second_component, body .footer, body .register_div .inputs_group,
+body .register_div .group_inputs, body .register_div, body .main_text_div, body .body_texts_div, body .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container {
+  max-width: 1200px;
+  height: 250vh;
+}
+body .body_texts_div {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  position: relative;
+  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .main_text_div {
+  width: 100%;
+  height: 100%;
+}
+body .main_text {
+  width: 100%;
+  font-size: 135px;
+}
+body .second_text_div {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 70px;
+  font-weight: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -20px;
+  width: 802px;
+  height: 225px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .animation_div {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  text-align: center;
+  -webkit-animation: floatAnimation 1.5s ease-in-out infinite;
+          animation: floatAnimation 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes floatAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes floatAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+body .fa-chevron-down {
+  font-size: 30px;
+}
+body .register_div {
+  max-width: 1100px;
+  height: 1050px;
+  background: linear-gradient(311deg, rgba(30, 30, 30, 0.6) -3.69%, rgba(255, 255, 255, 0.2) 130.02%);
+  background-blend-mode: screen;
+  border-radius: 50px;
+  position: relative;
+  top: 200px;
+}
+body .register_div .register_container {
+  max-width: 1050px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .register_div .upload_div {
+  width: 250px;
+  height: 200px;
+  background-image: url(/public/images/Снимок\ экрана\ 2023-12-14\ 142433.png);
+  background-size: cover;
+  border-radius: 5px;
+}
+body .register_div .upload_input {
+  color: linear-gradient(91deg, #1e1e1e -35.6%, rgba(255, 255, 255, 0.15) 102.38%);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 91%;
+  height: 100%;
+}
+body .register_div .register_items {
+  width: 50%;
+  position: relative;
+  top: -25px;
+}
+body .register_div .register_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 10px;
+  line-height: 45px;
+  position: relative;
+}
+body .register_div .placeholder_label {
+  font-size: 12px;
+  color: #fff;
+}
+body .register_div .register_flex_div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 10px;
+}
+body .register_div #user_firstname,
+body .register_div #user_lastname {
+  width: 100%;
+  height: 50px;
+  margin: 5px auto;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: crimson;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: linear-gradient(91deg, #1e1e1e -35.6%, rgba(255, 255, 255, 0.15) 102.38%);
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Lexend Mega;
+  font-weight: 200;
+  line-height: normal;
+}
+body .register_div .required_text {
+  display: none;
+}
+body .register_div .inputs_group,
+body .register_div .group_inputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+body .register_div .group_inputs {
+  margin: 20px;
+  padding: 0px 10px;
+}
+body .register_div .group_inputs label {
+  position: absolute;
+  top: -25px;
+  left: 10px;
+}
+body .register_div .group_inputs input {
+  width: 98%;
+  height: 50px;
+  margin: 5px auto;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: crimson;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background: linear-gradient(91deg, #1e1e1e -35.6%, rgba(255, 255, 255, 0.15) 102.38%);
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Lexend Mega;
+  font-weight: 200;
+  line-height: normal;
+}
+body .register_div .service_terms_div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+body .register_div .register_btn {
+  position: absolute;
+  bottom: 60px;
+  padding: 12px 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Lexend Mega;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(93deg, #1e1e1e -110.41%, rgba(217, 217, 217, 0.4) 198.89%);
+  border: crimson;
+}
+body .register_div .service_terms_div p {
+  margin: 0px 10px;
+}
+body .footer {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(93deg, #000 -73.48%, rgba(255, 255, 255, 0.15) 83.74%);
+  background-blend-mode: screen;
+}
+body .footer_container {
+  max-width: 1200px;
+  height: 100%;
+  height: 300px;
+  margin: 0px auto;
+  padding: 0px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .footer_first_component p {
+  font-size: 12px;
+  margin: 0px;
+}
+body .fa-telegram,
+body .fa-instagram,
+body .fa-github {
+  font-size: 50px;
+  margin: 10px;
+}
+body .icons_row {
+  position: absolute;
+  top: -100px;
+}
+body .footer_components_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .footer_icons_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 150px;
+}
+body .footer_icons_div p {
+  font-size: 10px;
+  position: absolute;
+  bottom: -50px;
+}
+body .footer_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 100px;
+}
+body textarea {
+  border-radius: 10px;
+  background: linear-gradient(91deg, rgba(0, 0, 0, 0.19) -10.97%, rgba(217, 217, 217, 0.19) 109.83%);
+  color: #fff;
+  font-family: Lexend Mega;
+  font-size: 10px;
+  padding: 10px;
+  outline: none;
+}
+body .footer_btn {
+  padding: 12px 40px;
+  color: #fff;
+  text-align: center;
+  font-family: Lexend Mega;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(93deg, #1e1e1e -110.41%, rgba(217, 217, 217, 0.2) 198.89%);
+  border: crimson;
+  margin: 10px;
+  position: relative;
+  left: 130px;
+}
