@@ -1,6 +1,6 @@
-@import "/null/null.scss";
+@import "Styles/null/null.scss";
 
-$back_image: url(/public/images/mask-group.png);
+$back_image: url(../public/mask-group.png);
 $null: 0px;
 $full_px: 100px;
 $full: 100%;
@@ -106,10 +106,12 @@ body {
       opacity: 0;
       transform: translateY(0);
     }
+
     50% {
       opacity: 1;
       transform: translateY($def_px * 2);
     }
+
     100% {
       opacity: 0;
       transform: translateY(0);
@@ -119,16 +121,15 @@ body {
   .fa-chevron-down {
     font-size: $def_px * 3;
   }
+
   .register_div {
     max-width: ($full_px * 10 + 100);
     height: $full_px * 10.5;
     @extend %margins_style;
     @extend %positions_style;
-    background: linear-gradient(
-      311deg,
-      rgba(30, 30, 30, 0.6) -3.69%,
-      rgba(255, 255, 255, 0.2) 130.02%
-    );
+    background: linear-gradient(311deg,
+        rgba(30, 30, 30, 0.6) -3.69%,
+        rgba(255, 255, 255, 0.2) 130.02%);
     background-blend-mode: screen;
     border-radius: ($def_px * 5);
     position: $rel;
@@ -146,17 +147,15 @@ body {
     .upload_div {
       width: ($full_px * 2.5);
       height: ($full_px * 2);
-      background-image: url(/public/images/Снимок\ экрана\ 2023-12-14\ 142433.png);
+      background-image: url(../public/user.png);
       background-size: cover;
       border-radius: $def_px - 5;
     }
 
     .upload_input {
-      color: linear-gradient(
-        91deg,
-        #1e1e1e -35.6%,
-        rgba(255, 255, 255, 0.15) 102.38%
-      );
+      color: linear-gradient(91deg,
+          #1e1e1e -35.6%,
+          rgba(255, 255, 255, 0.15) 102.38%);
       padding: $def_px;
       cursor: pointer;
       font-size: 12px;
@@ -205,11 +204,9 @@ body {
       border: crimson;
       outline: none;
       border: 1px solid rgba(255, 255, 255, 0);
-      background: linear-gradient(
-        91deg,
-        #1e1e1e -35.6%,
-        rgba(255, 255, 255, 0.15) 102.38%
-      );
+      background: linear-gradient(91deg,
+          #1e1e1e -35.6%,
+          rgba(255, 255, 255, 0.15) 102.38%);
       color: $color_white;
       align-items: $position_center;
       font-family: Lexend Mega;
@@ -252,11 +249,9 @@ body {
       border: crimson;
       outline: none;
       border: 1px solid rgba(255, 255, 255, 0);
-      background: linear-gradient(
-        91deg,
-        #1e1e1e -35.6%,
-        rgba(255, 255, 255, 0.15) 102.38%
-      );
+      background: linear-gradient(91deg,
+          #1e1e1e -35.6%,
+          rgba(255, 255, 255, 0.15) 102.38%);
       color: $color_white;
       align-items: $position_center;
       font-family: Lexend Mega;
@@ -286,11 +281,9 @@ body {
       font-weight: 700;
       border-radius: $def_px - 5;
       cursor: pointer;
-      background: linear-gradient(
-        93deg,
-        #1e1e1e -110.41%,
-        rgba(217, 217, 217, 0.4) 198.89%
-      );
+      background: linear-gradient(93deg,
+          #1e1e1e -110.41%,
+          rgba(217, 217, 217, 0.4) 198.89%);
       border: crimson;
     }
 
@@ -304,11 +297,9 @@ body {
     height: ($full_px * 3 + 50px);
     @extend %margins_style;
     @extend %positions_style;
-    background: linear-gradient(
-      93deg,
-      #000 -73.48%,
-      rgba(255, 255, 255, 0.15) 83.74%
-    );
+    background: linear-gradient(93deg,
+        #000 -73.48%,
+        rgba(255, 255, 255, 0.15) 83.74%);
     background-blend-mode: screen;
   }
 
@@ -373,11 +364,9 @@ body {
 
   textarea {
     border-radius: 10px;
-    background: linear-gradient(
-      91deg,
-      rgba(0, 0, 0, 0.19) -10.97%,
-      rgba(217, 217, 217, 0.19) 109.83%
-    );
+    background: linear-gradient(91deg,
+        rgba(0, 0, 0, 0.19) -10.97%,
+        rgba(217, 217, 217, 0.19) 109.83%);
     color: $color_white;
     font-family: Lexend Mega;
     font-size: $def_px;
@@ -395,18 +384,12 @@ body {
     font-weight: 700;
     border-radius: $def_px - 5;
     cursor: pointer;
-    background: linear-gradient(
-      93deg,
-      #1e1e1e -110.41%,
-      rgba(217, 217, 217, 0.2) 198.89%
-    );
+    background: linear-gradient(93deg,
+        #1e1e1e -110.41%,
+        rgba(217, 217, 217, 0.2) 198.89%);
     border: crimson;
     margin: $def_px;
     position: $rel;
     left: $full_px * 1.3;
   }
 }
-
-
-
-

@@ -41,7 +41,7 @@ body {
 }
 
 body {
-  background: url(/public/images/mask-group.png);
+  background: url(/public/mask-group.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -198,7 +198,7 @@ body .register_div .register_container {
 body .register_div .upload_div {
   width: 250px;
   height: 200px;
-  background-image: url(/public/images/Снимок\ экрана\ 2023-12-14\ 142433.png);
+  background-image: url(/public/Снимок\ экрана\ 2023-12-14\ 142433.png);
   background-size: cover;
   border-radius: 5px;
 }
